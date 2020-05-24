@@ -235,6 +235,8 @@ button:focus {
 }
 .partners__list-item-description {
   color: #666666;
+  width: 217px;
+  margin: 0 auto;
   font-family: var(--secondary-font);
   font-size: 14px;
   font-weight: 300;
@@ -266,8 +268,13 @@ button:focus {
     margin-bottom: 112px;
   }
 
-  .header__description span {
-    display: block;
+  .header__description {
+    width: 276px;
+    margin: 0 auto;
+  }
+  .partners__title {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 
@@ -279,5 +286,63 @@ button:focus {
     background-image: url(../img/header_bgImage_tablet.png);
     padding-bottom: 234px;
     padding-top: 40px;
+  }
+  .header__logo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 148px;
+  }
+  .header__authorization-list {
+    margin-bottom: 0;
+  }
+  .header__title {
+    font-size: 50px;
+  }
+
+  .header__content-wrapper {
+    margin: 0 auto;
+    width: 512px;
+  }
+  .header__title {
+    margin-bottom: 30px;
+  }
+
+  .header__description {
+    margin-bottom: 32px;
+    padding: 0 30px;
+  }
+
+  .header__description {
+    font-size: 24px;
+  }
+  .header__find-btn {
+    width: 226px;
+  }
+  .partners__title {
+    margin-bottom: 32px;
+  }
+  .partners__list {
+    width: 472px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+  .partners__list-item:nth-last-child(2n) {
+    margin-bottom: 60px;
+  }
+  .partners__list-item-orderPosition-1 {
+    order: 3;
+    margin-bottom: 0px;
+  }
+  .partners__list-item-orderPosition-2 {
+    order: 2;
+  }
+  .partners__list-item-orderPosition-3 {
+    order: 4;
+  }
+  .partners__btn {
+    width: 194px;
   }
 }
