@@ -163,7 +163,7 @@ button:focus {
 
 .partners__title-wrapper {
   text-align: center;
-  margin-bottom: 2px;
+  margin-bottom: 16px;
 }
 .partners__list-wrapper {
   margin-bottom: 24px;
@@ -271,6 +271,7 @@ button:focus {
   .header__description {
     width: 276px;
     margin: 0 auto;
+    margin-bottom: 14px;
   }
   .partners__title {
     width: 300px;
@@ -279,6 +280,12 @@ button:focus {
 }
 
 @media (min-width: 768px) {
+  .partners {
+    padding-top: 68px;
+  }
+  .partners__title-wrapper {
+    margin-bottom: 0px;
+  }
   .header__authorization-list {
     justify-content: flex-end;
   }
@@ -287,13 +294,15 @@ button:focus {
     padding-bottom: 234px;
     padding-top: 40px;
   }
+  .haader__nav {
+  }
   .header__logo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    margin-bottom: 148px;
   }
+
   .header__authorization-list {
     margin-bottom: 0;
   }
@@ -306,7 +315,7 @@ button:focus {
     width: 512px;
   }
   .header__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .header__description {
@@ -323,14 +332,9 @@ button:focus {
   .partners__title {
     margin-bottom: 32px;
   }
-  .partners__list {
-    width: 472px;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 36px;
-  }
+
   .partners__list-item:nth-last-child(2n) {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
   .partners__list-item-orderPosition-1 {
     order: 3;
@@ -344,5 +348,40 @@ button:focus {
   }
   .partners__btn {
     width: 194px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__top-row {
+    width: 690px;
+    margin: 0 auto;
+    margin-bottom: 142px;
+  }
+  .partners__list {
+    width: 514px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .partners__list {
+    width: 940px;
+
+    margin: 0 auto;
+  }
+  .header {
+    background-image: url(..//img/header_bgImage_desktop.png);
+  }
+  .partners__list-item:nth-last-child(2n) {
+    margin-bottom: 0px;
+  }
+  .partners__list-item-orderPosition-1 {
+    margin-bottom: 0px;
+  }
+  .header__top-row {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 142px;
   }
 }
