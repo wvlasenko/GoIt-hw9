@@ -77,7 +77,6 @@ button:focus {
 .header__authorization-list {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 112px; */
 }
 .header__authorization-list-item:not(:last-child) {
   margin-right: 10px;
@@ -300,7 +299,6 @@ button:focus {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
   }
 
   .header__authorization-list {
@@ -353,7 +351,8 @@ button:focus {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .header__top-row {
-    width: 690px;
+    align-items: baseline;
+    width: 640px;
     margin: 0 auto;
     margin-bottom: 142px;
   }
@@ -365,11 +364,10 @@ button:focus {
   }
 }
 @media (min-width: 1200px) {
-  .partners__list {
-    width: 940px;
-
+  /* .partners__list {
+    width: 960px;
     margin: 0 auto;
-  }
+  } */
   .header {
     background-image: url(..//img/header_bgImage_desktop.png);
   }
@@ -380,8 +378,12 @@ button:focus {
     margin-bottom: 0px;
   }
   .header__top-row {
-    width: 940px;
-    margin: 0 auto;
+    align-items: baseline;
+    /* width: 1018px; */
+    /* margin: 0 auto; */
     margin-bottom: 142px;
+  }
+  .partners__list-wrapper {
+    margin-bottom: 32px;
   }
 }
